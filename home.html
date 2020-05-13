@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <link rel="stylesheet" type="text/css" href="bootsrap.min.css">
+</head>
+<body>
+    <div class="big-container">
+        <div class="square">
+            <h1 class="MotoName">MotorBike color changer</h1> 
+           <div id="motor">
+                <img src="./img/motor.png" >
+            </div>
+            <div class="generate">         
+                <p>Generate Random Colors</p>
+                <button id="gene" onclick="Generate()">Generate</button>
+            </div>
+            <div class="specific">
+                <p>Generate Specific Colors</p>
+                <select name="Colors" id="colors"> 
+                    <option value="blue">Blue</option>
+                    <option  value="gray">Gray</option>
+                    <option  value="green">Green</option>
+                    <option  value="yellow">Yellow</option>
+                    <option  value="lightblue">Lightblue</option>
+                    <option  value="black">Black</option>
+                </select>
+                <div class="buttom">
+                    <button id="show" onclick="Show()">Show</button>
+                    <button id="reset" onclick="Reset()">Reset</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
